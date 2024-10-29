@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<div class="container text-center">
+<%= render @categorium %>
+
+<div>
+  <%= link_to "Editar Categoria", edit_categorium_path(@categorium) %> |
+  <%= link_to "Regresar Categoria", categoria_path %>
+
+  <%= button_to "Eliminar Categoria", @categorium, method: :delete %>
+</div>
+</div>

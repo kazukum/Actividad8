@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<div class="container text-center">
+<%= render @usuario %>
+
+<div>
+  <%= link_to "Editar usuario", edit_usuario_path(@usuario) %> |
+  <%= link_to "Regresar a Usuarios", usuarios_path %>
+
+  <%= button_to "Eliminar este Usuario", @usuario, method: :delete %>
+</div>
+</div>

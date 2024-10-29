@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Categoria" %>
+
+
+<div class="container text-center card text-white bg-danger mb-3" style="max-width: 20rem;" >
+
+
+
+<div id="categoria" class="card-header" ><h1>Categoria</h1></div>
+<div class="card-body bg-light">
+  <% @categoria.each do |categorium| %>
+    <%= render categorium %>
+    <p>
+      <%= link_to "Show this categorium", categorium %>
+    </p>
+  <% end %>
+
+  <%= link_to "Nueva Categoria", new_categorium_path %>
+
+</div>
+</div>
+
+
+

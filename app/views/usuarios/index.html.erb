@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Usuarios" %>
+<div class="container text-center card text-white bg-success mb-3" style="max-width: 20rem;" >
+
+
+
+<div id="usuarios" class="card-header"><h1>Usuarios</h1></div>
+<div class="card-body bg-light">
+  <% @usuarios.each do |usuario| %>
+    <%= render usuario %>
+    <p>
+      <%= link_to "Show this usuario", usuario %>
+    </p>
+  <% end %>
+<%= link_to "Nuevo Usuario", new_usuario_path %>
+</div>
+</div>
+
+

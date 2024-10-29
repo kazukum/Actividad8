@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Comentarios" %>
+
+<div class="container text-center card text-white bg-warning mb-3" style="max-width: 20rem;" >
+
+
+
+<div id="comentarios" class="card-header"><h1>Comentarios</h1></div>
+<div class="card-body bg-light">
+  <% @comentarios.each do |comentario| %>
+    <%= render comentario %>
+    <p>
+      <%= link_to "Show this comentario", comentario %>
+    </p>
+  <% end %>
+
+  <%= link_to "Nuevo Comentario", new_comentario_path %>
+</div>
+</div>
+
+
+
+
+

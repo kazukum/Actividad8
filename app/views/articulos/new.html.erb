@@ -1,0 +1,12 @@
+<% content_for :title, "Nuevo articulo" %>
+<div class="container text-center">
+<h1>Nuevo Articulo</h1>
+
+<%= render "form", articulo: @articulo %>
+
+<br>
+
+<div>
+  <%= link_to "Regresa Articulos", articulos_path %>
+</div>
+</div>

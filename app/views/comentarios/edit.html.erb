@@ -1,0 +1,13 @@
+<% content_for :title, "Editar Comentario" %>
+<div class="container text-center">
+<h1>Editar Comentario</h1>
+
+<%= render "form", comentario: @comentario %>
+
+<br>
+
+<div>
+  <%= link_to "Mostrar Comentario", @comentario %> |
+  <%= link_to "Regresar Comentarios", comentarios_path %>
+</div>
+</div>
